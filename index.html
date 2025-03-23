@@ -5,17 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shivat Dhar - Digital Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function showPage(pageId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(pageId).style.display = 'block';
+        }
+        window.onload = function() {
+            showPage('about');
+        };
+    </script>
 </head>
 <body>
     <header>
-        <img src="profile.jpg" alt="Shivat Dhar" class="profile-img">
+        <img src="Profile.png" alt="Shivat Dhar" class="profile-img">
         <h1>Shivat Dhar</h1>
-        <p>Engineering Student</p>
+        <p>Engineering Student | Tech Enthusiast | Problem Solver</p>
+        
     </header>
+
+    <nav>
+        <a onclick="showPage('about')">About</a>
+        <a onclick="showPage('skills')">Skills</a>
+        <a onclick="showPage('education')">Education</a>
+        <a onclick="showPage('strengths')">Strengths</a>
+        <a onclick="showPage('hobbies')">Hobbies</a>
+        <a onclick="showPage('achievements')">Achievements</a>
+        <a onclick="showPage('contact')">Contact</a>
+    </nav>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Enthusiastic and motivated first-year BTech Computer Science student eager to apply my foundation knowledge of programming and technology to gain practical experience, contribute to meaningful projects, and enhance my skills.</p>
+        <p>
+            I am a dedicated and passionate **BTech Computer Science** student with a strong foundation in programming, problem-solving, and emerging technologies.
+            I strive to **learn, innovate, and build impactful solutions** through my technical skills and logical thinking. 
+            Excited about **software development, data analysis, and AI**, I am always eager to expand my expertise and contribute to meaningful projects.
+        </p>
     </section>
 
     <section id="skills">
@@ -24,6 +49,7 @@
             <li>C Language - ⭐⭐⭐⭐</li>
             <li>HTML/CSS - ⭐⭐⭐⭐</li>
             <li>C++ Language - ⭐⭐⭐⭐</li>
+            <li>Python - ⭐⭐⭐</li>
             <li>Microsoft Word - ⭐⭐⭐</li>
             <li>Microsoft Excel - ⭐⭐⭐</li>
         </ul>
@@ -42,9 +68,10 @@
         <h2>Strengths</h2>
         <ul>
             <li>Problem Solving</li>
-            <li>Decision Making</li>
-            <li>Communication</li>
-            <li>Multi-tasking</li>
+            <li>Critical Thinking</li>
+            <li>Communication & Collaboration</li>
+            <li>Leadership & Decision Making</li>
+            <li>Adaptability & Quick Learning</li>
         </ul>
     </section>
 
@@ -52,15 +79,26 @@
         <h2>Hobbies</h2>
         <ul>
             <li>Playing Games 🎮</li>
-            <li>Playing sports </li>
+            <li>Playing Sports ⚽🏀</li>
             <li>Watching Cinema 🍿</li>
+            <li>Exploring New Technologies 🖥️</li>
+        </ul>
+    </section>
+
+    <section id="achievements">
+        <h2>Achievements & Certifications</h2>
+        <ul>
+            <li>Certified in Oracle <br> <a href="Oracle.pdf" target="_blank">View Certificate</a></li>
+            <li>Certified in Python Basics <br> <a href="Python_Basics.pdf" target="_blank">View Certificate</a></li>
+            <li>Certified in Tableau <br> <a href="Tableau.pdf" target="_blank">View Certificate</a></li>
+            <li>Certified in Cisco Python 1<br> <a href="cisco_Python_1.pdf" target="_blank">View Certificate</a></li>
+            <li>Certified in Cisco Python 2 <br> <a href="cisco_Python_2.pdf" target="_blank">View Certificate</a></li>
         </ul>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:202401080003@mitaoe.ac.in">202401080003@mitaoe.ac.in</a></p>
-        <p>Phone: <a href="tel:+917889710716">+91 7889710716</a></p>
         <p>Location: 📍 Alandi, Pune</p>
     </section>
 
