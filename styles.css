@@ -1,12 +1,12 @@
 /* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 
 /* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+    background: linear-gradient(45deg, #1E1E2E, #3A3A56, #2D2D4A);
     background-size: 300% 300%;
     animation: gradientBG 8s ease infinite;
     color: white;
@@ -20,16 +20,15 @@ body {
     100% { background-position: 0% 50%; }
 }
 
-/* Header Section */
+/* Header */
 header {
     background: rgba(0, 0, 0, 0.6);
     padding: 40px 20px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    border-bottom: 2px solid #FFD700;
+    border-bottom: 3px solid #FFD700;
 }
 
-/* Profile Image Styling */
+/* Profile Image */
 .profile-img {
     width: 140px;
     height: 140px;
@@ -38,69 +37,50 @@ header {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Profile Image Hover Effect */
 .profile-img:hover {
     transform: scale(1.1);
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
 }
 
-/* Heading Styling */
-h1 {
-    margin: 10px 0 5px;
-    font-size: 32px;
-    font-weight: bold;
-    color: #FFD700;
-}
-
-p {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-/* Section Styling */
+/* Sections */
 section {
     width: 80%;
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     border-radius: 12px;
     backdrop-filter: blur(12px);
     transition: transform 0.3s ease, background 0.3s ease;
 }
 
-/* Section Hover Effect */
 section:hover {
     transform: scale(1.03);
     background: rgba(255, 255, 255, 0.25);
 }
 
-/* Heading Colors */
-h2 {
-    color: #FFD700;
+/* Navigation */
+nav {
+    text-align: center;
+    padding: 15px 0;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
 }
 
-/* List Styling */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
+nav a {
+    margin: 10px;
+    padding: 10px 15px;
     font-size: 18px;
-    margin: 8px 0;
-}
-
-/* Links */
-a {
     color: #FFD700;
     text-decoration: none;
-    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-a:hover {
-    text-decoration: underline;
+nav a:hover {
+    background-color: #FFD700;
+    color: black;
 }
 
 /* Footer */
@@ -109,5 +89,5 @@ footer {
     padding: 12px;
     background: rgba(0, 0, 0, 0.6);
     margin-top: 20px;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
 }
+
